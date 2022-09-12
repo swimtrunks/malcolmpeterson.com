@@ -34,7 +34,7 @@ const socialLinks = [
   {
     icon: <MDIcon />,
     text: "Medium",
-    url: "https://www.medium.com",
+    url: "https://medium.com/@imMalcolm",
     description: "I recently started writing more and I have hosted a few of my posts over here at Medium."
   },
   {
@@ -82,6 +82,7 @@ const IndexPage = () => (
             <a
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
+              target= '_blank'
             >
               <div style={{ fill: "rgb(82 150 170)" }}>{link.icon}</div>
             </a>
@@ -92,7 +93,7 @@ const IndexPage = () => (
       <br />
       <div className={styles.intro}>
         <>
-          I am a self-taught software engineer currently building cool things for the web at <a href="https://www.postlight.com">Postlight</a>.<br />
+          I am a self-taught software engineer currently building cool things for the web at <a href="https://www.postlight.com" target='_blank'>Postlight</a>.<br />
           Music hoarder, fledgling writer, hobbyist photographer, design / architecture enthusiast and video game encyclopedia.
         </>
         <br />
